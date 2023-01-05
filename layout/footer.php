@@ -4,7 +4,7 @@
             <p>2023 &copy; SPK - SAW Method</p>
         </div>
         <div class="float-end">
-            <p>Dibuat dengan  <span class="text-danger"><i class="bi bi-heart"></i></span>  by Hamba Allah</p>
+            <p>Dibuat dengan  <span class="text-danger"><i class="bi bi-heart"></i></span>  by Muhammad Choirul Ikhwan</p>
         </div>
     </div>
 </footer>

@@ -33,17 +33,17 @@ $row = $result->fetch_array();
                                 <div class="col">
                                     <form action="bobot-edit-act.php" method="POST">
                                     <div class="form-group">
-                                        <label for="kriteria">Kriteria</label>
-                                        <input type="text" class="form-control" name="id_kriteria" id="kriteria" value="<?=$row['id_kriteria'];?>" hidden>
-                                        <input type="text" class="form-control" name="kriteria" value="<?=$row['nama_kriteria'];?>">
+                                        <label for="basicInput">Kriteria</label>
+                                        <input type="text" class="form-control" name="id_kriteria" value="<?=$row['id_kriteria'];?>" hidden>
+                                        <input type="text" class="form-control" name="nama_kriteria" value="<?=$row['nama_kriteria'];?>">
                                     </div>
                                     <div class="form-group">
-                                        <label for="bobot">Bobot</label>
+                                        <label for="basicInput">Bobot</label>
                                         <input type="text" class="form-control" name="bobot" value="<?=$row['bobot'];?>">
                                     </div>
                                     <div class="form-group">
-                                        <label for="atribut">Atribut</label>
-                                        <select class="form-control form-select" name="atribut" id="atribut">
+                                        <label for="basicInput">Jenis</label>
+                                        <select class="form-control form-select" name="jenis">
                                             <option value="benefit">Benefit</option>
                                             <option value="cost">Cost</option>
                                           </select>
