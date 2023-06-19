@@ -45,8 +45,15 @@
 
                 <li class="sidebar-item">
                     <a href="preferensi.php" class='sidebar-link'>
-                        <i class="bi bi-bar-chart-fill"></i>
+                        <i class="bi bi-clipboard-data"></i>
                         <span>Nilai Preferensi</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-item">
+                    <a href="grafik.php" class='sidebar-link'>
+                        <i class="bi bi-bar-chart-fill"></i>
+                        <span>Grafik Nilai</span>
                     </a>
                 </li>
 

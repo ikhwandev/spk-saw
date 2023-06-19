@@ -7,6 +7,14 @@ require "W.php";
 require "R.php";
 ?>
 
+<style>
+      @media print {
+        .float-start, .float-end, .bi, .btn, .card-title, .card-text, .cap {
+        display : none;
+         }
+      }
+</style>
+
   <body>
     <div id="app">
       <?php require "layout/sidebar.php";?>
@@ -17,7 +25,7 @@ require "R.php";
           </a>
         </header>
         <div class="page-heading">
-          <h3>Nilai Preferensi (P)</h3>
+          <h3 class="h3">Hasil Nilai Preferensi (P)</h3>
         </div>
         <div class="page-content">
           <section class="row">
@@ -32,9 +40,14 @@ require "R.php";
                     <p class="card-text">
                     Nilai preferensi (P) merupakan penjumlahan dari perkalian matriks ternormalisasi R dengan vektor bobot W.</p>
                   </div>
+                  <a href="print.php">
+                  <button type="button" class="btn btn-outline-primary btn-sm m-2" data-bs-toggle="modal" target="_blank">
+                                        Export PDF
+                                    </button>
+                                    </a>
                   <div class="table-responsive">
                     <table id="data-table" class="table table-striped mb-0">
-                    <caption>
+                    <caption class="cap">
     Nilai Preferensi (P)
   </caption>
   <thead>
@@ -73,7 +86,8 @@ foreach ($R as $i => $r) {
       </div>
     </div>
     <?php require "layout/js.php";?>
-    <script src="assets/js/app.js"></script>
+    <!-- <script src="assets/js/app.js"></script>
+    <script src="assets/js/Chart.js"></script> -->
   </body>
 
 </html>
